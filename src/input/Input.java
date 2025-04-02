@@ -3,11 +3,19 @@ package input;
 import java.util.Scanner;
 
 public class Input {
-    final static    Scanner value = new Scanner(System.in);
+    final static    Scanner value = new Scanner(System.in); // ¿value?
+//    final static    Scanner keyboard;
+
+    /*
+        static {
+         keyboard = new Scanner(System.in);
+        }
+
+     */
 
     public static int scanValue(){
         return value.nextInt();
-    }
+    } // ❌
     public static String getFullName(){
         return value.next();
 

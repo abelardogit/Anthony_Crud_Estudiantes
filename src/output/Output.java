@@ -1,5 +1,6 @@
 package output;
 
+// No uses IA
 public class Output {
 
     public static void showMenu(){

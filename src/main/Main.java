@@ -22,8 +22,9 @@ public class Main {
     final static int USER_LIST = 4 ;
     final static int EXIT = 5;
     public final static int STUDENT_NUMBER = 2;
+    // El main no tiene la responsabilidad de gestionar esta lista
     public static HashMap<Integer, Student> students;
-    public static Iterator<Map.Entry<Integer, Student>> iterate;
+    public static Iterator<Map.Entry<Integer, Student>> iterate; // ❌
     public static void main(String[] args) {
 
         students = new HashMap<>();
@@ -33,12 +34,13 @@ public class Main {
 
         boolean correctOption = false;
 
+        // ¿Quizá en un método?
         do {
         showMenu();
         optionMenu=selectValue();
         correctOption = validateOpcion();
         }while(!correctOption);
-
+// aprovecha para mejorar tus habilidades para escribir código semántico.
         if (optionMenu==EXIT){
         userWantToExit=true;
         }else {

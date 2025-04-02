@@ -9,7 +9,7 @@ public class Add {
         for (int i =0;i<main.Main.STUDENT_NUMBER;i++){
             Output.fullNameRequest();
             String fullName = Input.getFullName();
-            Output.AgeRequest();
+            Output.AgeRequest(); // Los métodos deben empezar con minúscula
             int age = Input.getAge();
             Output.birthdayRequest();
             String birthday= Input.getBirthday();

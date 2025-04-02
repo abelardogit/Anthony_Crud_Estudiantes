@@ -9,7 +9,7 @@ public class List {
         public static void listStudent(){
             Main.iterate = Main.students.entrySet().iterator();
 
-            if(!Main.iterate.hasNext()){
+            if(!Main.iterate.hasNext()){ // 👏
                 Output.studentEmpty();
             }
 

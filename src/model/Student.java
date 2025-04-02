@@ -43,6 +43,7 @@ public class Student {
         this.firstScore = firstScore;
     }
 
+    // Si no lo usas, no lo pongas :)
     public void setSecondScore(int secondScore) {
         this.secondScore = secondScore;
     }
