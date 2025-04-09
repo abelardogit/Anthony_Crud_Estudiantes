@@ -1,12 +1,13 @@
 package add;
 
 import input.Input;
+import main.Main;
 import model.Student;
 import output.Output;
 
 public class Add {
     public static void adduser(){
-        for (int i =0;i<main.Main.STUDENT_NUMBER;i++){
+        for (int i = 0; i< Main.STUDENT_NUMBER; i++){
             Output.fullNameRequest();
             String fullName = Input.getFullName();
             Output.AgeRequest(); // Los métodos deben empezar con minúscula
